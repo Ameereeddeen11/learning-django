@@ -6,4 +6,7 @@ from .models import Category, Brend
 
 
 def index(response):
-    return HttpResponse("<h1>Amiriddin</h1>")
+    return render(response, "", {})
+
+def home(response):
+    return render(response, "home.html", {})
